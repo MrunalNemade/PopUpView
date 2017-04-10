@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JMW-Bh-Pab">
+                                <rect key="frame" x="110" y="70" width="380" height="380"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Gr-cI-NjF">
+                                        <rect key="frame" x="20" y="175" width="340" height="30"/>
+                                        <state key="normal" title="Close"/>
+                                        <connections>
+                                            <action selector="actionClose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FX5-EQ-Qpe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.91570828630000001" blue="0.61055347800000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JMW-Bh-Pab" secondAttribute="height" multiplier="1:1" id="12O-g1-v7O"/>
+                                    <constraint firstItem="3Gr-cI-NjF" firstAttribute="centerY" secondItem="JMW-Bh-Pab" secondAttribute="centerY" id="ED8-QN-cVi"/>
+                                    <constraint firstAttribute="height" constant="240" id="K9J-HB-KkI"/>
+                                    <constraint firstItem="3Gr-cI-NjF" firstAttribute="leading" secondItem="JMW-Bh-Pab" secondAttribute="leading" constant="20" id="T23-3f-taW"/>
+                                    <constraint firstItem="3Gr-cI-NjF" firstAttribute="centerX" secondItem="JMW-Bh-Pab" secondAttribute="centerX" id="Y7W-fk-FKk"/>
+                                    <constraint firstItem="3Gr-cI-NjF" firstAttribute="top" secondItem="JMW-Bh-Pab" secondAttribute="top" constant="115" id="wn9-lC-Gym"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="K9J-HB-KkI"/>
+                                        <exclude reference="wn9-lC-Gym"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kao-7n-3aN">
+                                <rect key="frame" x="265" y="480" width="70" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="qml-Qn-XVO"/>
+                                    <constraint firstAttribute="width" constant="70" id="t1f-oK-oU8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Show">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9i1-4i-pmt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JMW-Bh-Pab" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="0aj-r8-4Po"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JMW-Bh-Pab" secondAttribute="trailing" constant="90" id="SYM-he-usI"/>
+                            <constraint firstItem="kao-7n-3aN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VFt-lu-nCG"/>
+                            <constraint firstItem="JMW-Bh-Pab" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="90" id="XBt-Yv-KR2"/>
+                            <constraint firstItem="kao-7n-3aN" firstAttribute="top" secondItem="JMW-Bh-Pab" secondAttribute="bottom" constant="30" id="xcK-9n-ETU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="popUpView" destination="JMW-Bh-Pab" id="WLu-x5-irz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
